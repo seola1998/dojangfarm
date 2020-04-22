@@ -24,11 +24,11 @@ public class FarmImpl {
 	public int insertCommonNotice(CommonNotice cn) {
 		return cNoticeDAO.insertCommonNotice(cn);
 	}
-	public void updateCommonNotice(int CNNo) {
-		cNoticeDAO.updateCommonNotice(CNNo);
+	public void updateCommonNotice(CommonNotice cn) {
+		cNoticeDAO.updateCommonNotice(cn);
 	}
-	public void deleteCommonNotice(int CNNo) {
-		cNoticeDAO.deleteCommonNotice(CNNo);
+	public void deleteCommonNotice(CommonNotice cn) {
+		cNoticeDAO.deleteCommonNotice(cn);
 	}
 	
 	

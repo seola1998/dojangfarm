@@ -12,8 +12,8 @@ public interface FarmFacade {
 	//ComonNoticeDAO
 	
 	int insertCommonNotice(CommonNotice cn);// throws dataAcception;
-	void updateCommonNotice(int CNNo);// throws dataAcception;
-	void deleteCommonNotice(int CNNo);// throws dataAcception;
+	void updateCommonNotice(CommonNotice cn);// throws dataAcception;
+	void deleteCommonNotice(CommonNotice cn);// throws dataAcception;
 	
 	//DiscountDAO
 	void newDiscount(Normal normal);// throws dataAcception; //소분과 공동구매는 해당없음
