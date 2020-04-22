@@ -1,4 +1,4 @@
-package com.ssg.donjangfarm.dao;
+package com.ssg.dojangfarm.dao;
 
 import comssg.dojangfarm.domain.Normal;
 
