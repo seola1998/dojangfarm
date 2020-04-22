@@ -29,7 +29,13 @@ public class turnStateNormalController {
 
 	// DB에 넣는과정
 	// 위에서 만든normal 객체를 가져옴
-	@RequestMapping("/shop/Normal.do")
+	/**
+	 * 
+	 * @param normal
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/shop/myPage.do")
 	public ModelAndView handleRequest(@ModelAttribute("Normal") Normal normal) throws Exception {
 		// getState
 		String state = farm.getState(normal.getSaleNo());
