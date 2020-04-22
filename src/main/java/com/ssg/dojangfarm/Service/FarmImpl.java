@@ -30,7 +30,14 @@ public class FarmImpl {
 	public void deleteCommonNotice(CommonNotice cn) {
 		cNoticeDAO.deleteCommonNotice(cn);
 	}
-	
-	
+	public CommonNotice viewCommonNotice(CommonNotice cn) {
+		return cNoticeDAO.viewCommonNotice(cn);
+	}
+	public List<CommonNotice> getAllCNoticeList() {
+		return cNoticeDAO.getAllNoticeList();
+	}
+	public List<CommonNotice> getCNoticeListByUserNo(int userNo) {
+		return cNoticeDAO.getCNoticeListByUserNo(userNo);
+	}
 	
 }
