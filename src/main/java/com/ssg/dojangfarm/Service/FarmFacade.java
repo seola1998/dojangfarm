@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.ssg.dojangfarm.dao.CommonDAO;
 
+import comssg.dojangfarm.domain.Common;
 import comssg.dojangfarm.domain.Division;
 import comssg.dojangfarm.domain.Normal;
 
@@ -24,23 +25,20 @@ public interface FarmFacade {
 	void insertSale(Division division);// throws dataAcception;
 	void upddateSale(Division division);// throws dataAcception;
 	Division getDivisionSale(int saleNo);// throws dataAcception
-	List<Division> getAlDivisionList();// throws dataAcception;
+	List<Division> getAllDivisionList();// throws dataAcception;
 	List<Division> getDivisionListByUserNo(int userNo);// throws dataAcception;
 	List<Division> searchDivision(String title);// throws dataAcception;
-	//int turnDivisionOpen(int saleNo);// throws dataAcception;
-	//int turnDivisionClosed(int saleNo);// throws dataAcception; //매개변수
 	
 	//CommonDAO
 	void insertSale(CommonDAO common);// throws dataAcception;
 	void upddateSale(CommonDAO common);// throws dataAcception;
-	CommonDAO getCommonSale(int saleNo);// throws dataAcception
-	List<CommonDAO> getAlCommonList();// throws dataAcception;
-	List<CommonDAO> getCommonByUserNo(int userNo);// throws dataAcception;
-	List<CommonDAO> searchCommon(String title);// throws dataAcception;
+	Common getCommonSale(int saleNo);// throws dataAcception
+	List<Common> getAllCommonList();// throws dataAcception;
+	List<Common> getCommonListByUserNo(int userNo);// throws dataAcception;
+	List<Common> searchCommon(String title);// throws dataAcception;
 	
-	//int turnCommonOpen(int saleNo);// throws dataAcception;
-	//int turnCommonClosed(int saleNo);// throws dataAcception; //매개변수
-
+	
+	
 	//ComonNoticeDAO
 	
 	void insertCommonNotice();// throws dataAcception;
