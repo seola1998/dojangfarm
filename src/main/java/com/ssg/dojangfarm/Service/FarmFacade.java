@@ -26,9 +26,9 @@ public interface FarmFacade {
 	Division getDivisionSale(int saleNo);// throws dataAcception
 	List<Division> getAlDivisionList();// throws dataAcception;
 	List<Division> getDivisionListByUserNo(int userNo);// throws dataAcception;
+	List<Division> searchDivision(String title);// throws dataAcception;
 	//int turnDivisionOpen(int saleNo);// throws dataAcception;
 	//int turnDivisionClosed(int saleNo);// throws dataAcception; //매개변수
-	List<Division> searchDivision(String title);// throws dataAcception;
 	
 	//CommonDAO
 	void insertSale(CommonDAO common);// throws dataAcception;
@@ -36,9 +36,10 @@ public interface FarmFacade {
 	CommonDAO getCommonSale(int saleNo);// throws dataAcception
 	List<CommonDAO> getAlCommonList();// throws dataAcception;
 	List<CommonDAO> getCommonByUserNo(int userNo);// throws dataAcception;
+	List<CommonDAO> searchCommon(String title);// throws dataAcception;
+	
 	//int turnCommonOpen(int saleNo);// throws dataAcception;
 	//int turnCommonClosed(int saleNo);// throws dataAcception; //매개변수
-	List<CommonDAO> searchCommon(String title);// throws dataAcception;
 
 	//ComonNoticeDAO
 	

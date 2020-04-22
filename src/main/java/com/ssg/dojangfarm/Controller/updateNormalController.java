@@ -30,7 +30,7 @@ public class updateNormalController {
 
 		// DB에 넣는과정
 		// 위에서 만든normal 객체를 가져옴
-		@RequestMapping("/shop/Normal.do")
+		@RequestMapping("/shop/NormalUpdate.do")
 		public ModelAndView handleRequest(@ModelAttribute("Normal") Normal normal) throws Exception {
 //			normal.setUserNo(userNo);
 //			normal.setUserName(userName);
