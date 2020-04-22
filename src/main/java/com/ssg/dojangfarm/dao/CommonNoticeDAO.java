@@ -1,7 +1,9 @@
 package com.ssg.dojangfarm.dao;
 
+import comssg.dojangfarm.domain.CommonNotice;
+
 public interface CommonNoticeDAO {
-	void insertCommonNotice();// throws dataAcception;
+	int insertCommonNotice(CommonNotice cn);// throws dataAcception;
 	void updateCommonNotice(int CNNo);// throws dataAcception;
-	void deletecommonNotice(int CNNo);// throws dataAcception;
+	void deleteCommonNotice(int CNNo);// throws dataAcception;
 }
