@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Division extends Normal{
 	private int count;
-	private Date date;
+	private Date Ddate;
 	
 	public int getCount() {
 		return count;
@@ -13,10 +13,10 @@ public class Division extends Normal{
 		this.count = count;
 	}
 	public Date getDate() {
-		return date;
+		return Ddate;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDate(Date Ddate) {
+		this.Ddate = Ddate;
 	}
 	
 }

@@ -1,4 +1,4 @@
-package com.ssg.donjangfarm.Normal;
+package com.ssg.donjangfarm.dao;
 
 import java.util.List;
 
