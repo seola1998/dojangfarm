@@ -10,13 +10,15 @@ import comssg.dojangfarm.domain.Normal;
 public interface FarmFacade {
 	//NormalDAO
 	int insertSale(int userNo, Normal normal);
-	int updateSale(int userNo, Normal normal);
+	int updateSale(Normal normal);
 	Normal getNormalSale(int saleNo) ;
 	List<Normal> getAllNormalList();
 	List<Normal> getNormalListByUserNo(int userNo);
-	int turnNormalOpen(int saleNo);
-	int turnNormalClosed(int sale) ;
+	int turnSaleOpen(int saleNo);
+	int turnSaleClosed(int saleNo) ;
 	List<Normal> searchNormal(String title);// throws DataAccessException;
+	//add
+	String getState(int saleNo);
 	
 	//DivisionDAO
 	void insertSale(Division division);// throws dataAcception;
@@ -24,8 +26,8 @@ public interface FarmFacade {
 	Division getDivisionSale(int saleNo);// throws dataAcception
 	List<Division> getAlDivisionList();// throws dataAcception;
 	List<Division> getDivisionListByUserNo(int userNo);// throws dataAcception;
-	int turnDivisionOpen(int saleNo);// throws dataAcception;
-	int turnDivisionClosed(int sale);// throws dataAcception; //매개변수
+	//int turnDivisionOpen(int saleNo);// throws dataAcception;
+	//int turnDivisionClosed(int saleNo);// throws dataAcception; //매개변수
 	List<Division> searchDivision(String title);// throws dataAcception;
 	
 	//CommonDAO
@@ -34,8 +36,8 @@ public interface FarmFacade {
 	CommonDAO getCommonSale(int saleNo);// throws dataAcception
 	List<CommonDAO> getAlCommonList();// throws dataAcception;
 	List<CommonDAO> getCommonByUserNo(int userNo);// throws dataAcception;
-	int turnCommonOpen(int saleNo);// throws dataAcception;
-	int turnCommonClosed(int saleNo);// throws dataAcception; //매개변수
+	//int turnCommonOpen(int saleNo);// throws dataAcception;
+	//int turnCommonClosed(int saleNo);// throws dataAcception; //매개변수
 	List<CommonDAO> searchCommon(String title);// throws dataAcception;
 
 	//ComonNoticeDAO
@@ -47,4 +49,5 @@ public interface FarmFacade {
 	//DiscountDAO
 	void newDiscount(Normal normal);// throws dataAcception; //소분과 공동구매는 해당없음
 	void deleteDiscount(int saleNo);// throws dataAcception;
+	
 }
